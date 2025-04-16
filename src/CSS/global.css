@@ -1,0 +1,32 @@
+:root{
+    --gap-sm: 0.625rem;
+    --gap-base: 1rem;
+    --gap-md: 1.5rem;
+    --gap-lg: 2.5rem;
+    --gap-xl: 3rem;
+    --gap-xxl: 4rem;
+
+    --base-color: #333;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background 0.3s, color 0.3s; /* Criando uma transição para a cor do background da página e das cores das letras */
+}
+
+body.darkMode{
+    background-color: #0000;
+    color: #ffff;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style-type: none;
+}
+
