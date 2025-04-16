@@ -1,0 +1,39 @@
+.containerHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerNav{
+    display: flex;
+    gap: var(--gap-base);
+}
+
+.settingsConfig{
+    font-size: var(--gap-md);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.settingsMenu{
+    background: var(--base-color);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: var(--gap-sm);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* width: 200px; */
+    z-index: 1000;
+}
+
+.settingsMenu.darkMode{
+    background: var(--base-color);
+    border-color: #555;
+}
+
+.menuItem{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+    
+}
