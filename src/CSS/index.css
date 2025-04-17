@@ -1,2 +1,62 @@
 @import url(global.css);
 @import url(header.css);
+
+/* Container do botão de configurações */
+.settingsConfig {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 5px;
+}
+
+/* Menu de configurações */
+.settingsMenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    min-width: 200px;
+    z-index: 1000;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Classe para esconder o menu */
+.hidden {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    display: none;
+}
+
+/* Estilização dos itens do menu */
+.menuItem {
+    padding: 8px 0;
+}
+
+.themeToggle {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.languageSelect {
+    width: 100%;
+    padding: 4px;
+    margin-top: 4px;
+}
+
+/* Adicione isso para o li que contém o botão de configurações */
+.containerNav li:last-child {
+    position: relative;
+}
