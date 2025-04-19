@@ -1,10 +1,24 @@
 :root{
-    --background-color: #ffff;
-    --text-color: red;
+    --background-color: #f7f3cf;
+    --surfice-color: #F8FAFC;
+    --text-primary: #176585;
+    --text-secondary: #475569;
+    --primary: #2563EB;
+    --secondary: #059669;
+    --accent: #DC2626;
+    --hover-overlay: rgba(0, 0, 0, 0.05);
+
 
 }
 
 .dark-mode{
-    --background-color: #0000;
-    --text-color: green;
+    --background-color: #333647;
+    --section-primary: #0A0919;
+    --surfice-color: #2D2D2D;
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --primary: #ffd700  ;
+    --secondary: #10B981;
+    --accent: #EF4444;
+    --hover-overlay: rgba(0, 0, 0, 0.01);
 }

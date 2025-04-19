@@ -1,0 +1,170 @@
+.primarySection{
+    background-color: var(--section-primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    padding: 1rem;
+
+    & .textSection{
+        width: 50%;
+    }
+
+    & .glow-wrapper {
+        position: relative;
+        display: inline-block;
+        border-radius: 50%;
+    }
+
+    & .glow-wrapper:hover{
+        cursor: pointer;
+    }
+
+    & .glow-wrapper::before {
+        content: '';
+        position: absolute;
+        top: -5%;
+        left: -5%;
+        width: 110%;
+        height: 110%;
+        background: linear-gradient(
+            45deg,
+            #3B82F6,
+            #10B981,
+            #3B82F6,
+            #10B981
+        );
+        border-radius: 50%;
+        animation: glow-animation 3s linear infinite;
+        filter: blur(25px);
+        opacity: 0.5;
+        z-index: 1;
+    }
+
+    & .containerImg {
+        position: relative;
+        overflow: hidden;
+        width: 400px;
+        height: 400px;
+        border-radius: 20px;
+        z-index: 2; 
+    }
+    
+    & .containerImg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        position: relative;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    & .glow-wrapper:hover::before {
+        background: linear-gradient(
+            45deg,
+            #ffd700,    
+            #ffea00, 
+            #ffd700,
+            #ffbf00
+        );
+        animation: gold-glow 1.5s linear infinite;
+        opacity: 0.8;
+        filter: blur(35px);
+    }
+
+    & .qr-overlay{
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        transform: scale(0.8);
+    }
+
+    & .qr-code{
+        width: 100%;
+        height: auto;
+        filter: drop-shadow(0 0 15px #ffd700);
+        transition: transform 0.3s ease;
+    }
+    
+    & .qr-text{
+        color: #ffbf00;
+        margin-top: 30px;
+        font-size: 0.9rem;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.3s ease;
+    }
+
+    & .glow-wrapper:hover .qr-overlay {
+        opacity: 1;
+        /* transform: scale(1); */
+    }
+    
+    & .glow-wrapper:hover .qr-code {
+        transform: scale(1.1);
+    }
+    
+    & .glow-wrapper:hover .qr-text {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.2s;
+    }
+    
+    & .glow-wrapper:hover .profile-img {
+        filter: blur(3px) brightness(0.6);
+    }
+    
+    /* Mantenha seu glow existente e adicione: */
+    & .glow-wrapper::before {
+        transition: all 0.3s ease;
+    }
+    
+    & .glow-wrapper:hover::before {
+        filter: blur(40px);
+        opacity: 0.8;
+    }
+
+    & .textSection{
+        text-align: justify;
+    }
+}
+
+
+
+/* Animação específica para o dourado no hover*/
+@keyframes gold-glow {
+    0% {
+        background-size: 200% 200%;
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+@keyframes glow-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+

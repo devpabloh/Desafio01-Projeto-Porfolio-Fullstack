@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="containerHeader">
-        <a href="/"><h1>Dev. Pablo H.</h1></a>
+        <a href="/"><h2>Dev. Pablo H.</h2></a>
         <ul class="containerNav">
             <li><a href="/">Inicio</a></li>
             <li><a href="#about">Sobre</a></li>
@@ -36,8 +36,19 @@
         </ul>
     </header>
     <main class="containermain">
-        <section id="about">
-
+        <section id="about" class="primarySection">
+            <div class="glow-wrapper">
+                <div class="containerImg">
+                    <img src="src/assets/perfil-pablo.png" alt="Foto de Pablo Henrique">
+                    <div class="qr-overlay">
+                        <img src="src/assets/qr-whatsapp.jpeg" alt="QR Code WhatsApp Pablo Henrique" class="qr-code">
+                        <span class="qr-text">Escaneie para contato</span>
+                    </div>
+                </div>
+            </div>
+            <div class="textSection">
+                <p>Desenvolvedor Full-Stack com foco em aplicações web modernas, utilizando React, TypeScript, Node.js, express, MySQL, PostgreSQL e Docker. Experiência prática em projetos completos, desde o frontend até a modelagem de banco de dados. Apaixonado por desenvolver soluções acessíveis, eficientes e com foco na experiência do usuário. Conhecimento em metodologias ágeis e comprometido com boas práticas de desenvolvimento e segurança.</p>
+            </div>
         </section>
         <section id="skills">
             <div class="containerHardSkills">
@@ -69,6 +80,8 @@
             <p>Blog/Artigos (se você escreve sobre sua área).</p>
             <p>Certificados/Cursos (Coursera, Udemy, etc.).</p>
             <p>Idiomas (ex: Inglês intermediário, Espanhol fluente).</p>
+            <button class="buttonPrimary">primary</button>
+            <button class="buttonSecondary">secondary</button>
         </section>
     </main>
     <script src="src/Js/index.js"></script>

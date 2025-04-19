@@ -13,8 +13,9 @@ body{
     padding: 0;
     box-sizing: border-box;
     background-color: var(--background-color);
-    color: var(--text-color);
+    color: var(--text-primary);
     transition: background-color 0.3s, color 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a{
