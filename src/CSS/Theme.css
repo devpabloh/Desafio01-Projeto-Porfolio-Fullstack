@@ -1,0 +1,10 @@
+:root{
+    --background-color: #ffff;
+    --text-color: red;
+
+}
+
+.dark-mode{
+    --background-color: #0000;
+    --text-color: green;
+}
